@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - sapi_user_journey
+id: user_journey
+label: 'User Journey'

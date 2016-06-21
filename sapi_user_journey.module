@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_uninstall()
+ */
+function sapi_user_journey_uninstall(){
+  $configs = [
+    'field.field.sapi_data.user_journey.field_session_id',
+    'field.field.sapi_data.user_journey.field_step',
+    'field.field.sapi_data.user_journey.field_uri',
+    'field.field.sapi_data.user_journey.field_user'
+  ];
+  foreach ($configs as $config) {
+    Drupal::configFactory()->getEditable($config)->delete();
+  }
+}
