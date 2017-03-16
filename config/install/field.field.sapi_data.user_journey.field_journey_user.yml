@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.sapi_data.field_user
+    - field.storage.sapi_data.field_journey_user
     - sapi_data.sapi_data_type.user_journey
-id: sapi_data.user_journey.field_user
-field_name: field_user
+id: sapi_data.user_journey.field_journey_user
+field_name: field_journey_user
 entity_type: sapi_data
 bundle: user_journey
 label: User

@@ -122,7 +122,7 @@ class UserJourneyTracker extends ActionHandlerBase implements ActionHandlerInter
       'type' => 'user_journey',
       'name' => $sessionId,
       'field_session_id' => $sessionId,
-      'field_user' => $account,
+      'field_journey_user' => $account,
       'field_uri' => $URI,
       'field_step' => $next_step
     ]);
